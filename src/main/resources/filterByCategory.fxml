@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.Scene?>
+<?import javafx.scene.text.Font?>
+<Scene xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <AnchorPane prefHeight="400.0" prefWidth="600.0">
+        <children>
+            <VBox layoutX="21.0" prefHeight="400.0" prefWidth="600.0" spacing="7.0">
+                <children>
+                    <HBox alignment="CENTER" prefHeight="54.0" prefWidth="600.0">
+                        <children>
+                            <Label text="Filter by Category">
+                                <font>
+                                    <Font name="Courier New Bold" size="22.0"/>
+                                </font>
+                            </Label>
+                        </children>
+                    </HBox>
+                    <HBox prefHeight="24.0" prefWidth="600.0">
+                        <children>
+                            <Label prefHeight="24.0" prefWidth="250.0" text="Enter category: ">
+                                <font>
+                                    <Font name="Courier New" size="15.0"/>
+                                </font>
+                            </Label>
+                            <TextField fx:id="category" prefHeight="25.0" prefWidth="114.0"/>
+                        </children>
+                    </HBox>
+                    <HBox alignment="CENTER" prefHeight="62.0" prefWidth="600.0">
+                        <children>
+                            <Button fx:id="confirm" mnemonicParsing="false" text="Confirm"/>
+                        </children>
+                    </HBox>
+                    <HBox prefHeight="150.0" prefWidth="600.0">
+                        <children>
+                            <Label prefHeight="150.0" prefWidth="200.0" text="Filter Result: ">
+                                <font>
+                                    <Font name="Courier New" size="15.0"/>
+                                </font>
+                            </Label>
+                            <TextArea fx:id="result" prefHeight="25.0" prefWidth="300.0"/>
+                        </children>
+                    </HBox>
+                    <HBox alignment="CENTER" prefHeight="62.0" prefWidth="600.0">
+                        <children>
+                            <Button fx:id="quit" mnemonicParsing="false" text="Quit"/>
+                        </children>
+                    </HBox>
+                </children>
+            </VBox>
+        </children>
+    </AnchorPane>
+</Scene>

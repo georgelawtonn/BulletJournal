@@ -1,0 +1,1 @@
+{"Events":[{"Name":"meeting","Description":"at xxx hall","Day Of Week":"SUNDAY","Category":"school","Start Time":"11:00","Duration":5}],"Tasks":[{"Name":"club rehersal","Description":"at snell","Day Of Week":"TUESDAY","Category":"school","Complete":true}],"MaxTask":2,"MaxEvent":2,"WeekName":"111","Categories":["school"],"Notes":[],"Quotes":[]}

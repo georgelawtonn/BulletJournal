@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.Scene?>
+<?import javafx.scene.text.Font?>
+<Scene xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <AnchorPane prefHeight="200" prefWidth="200">
+        <children>
+            <MenuBar fx:id="options" prefHeight="27.0" prefWidth="850.0">
+                <menus>
+                    <Menu fx:id="file" mnemonicParsing="false" text="File">
+                        <items>
+                            <MenuItem fx:id="save" mnemonicParsing="false" text="Save"/>
+                            <MenuItem fx:id="open" mnemonicParsing="false" text="Open"/>
+                            <MenuItem fx:id="newFile" mnemonicParsing="false" text="New"/>
+                        </items>
+                    </Menu>
+                    <Menu mnemonicParsing="false" text="Add">
+                        <items>
+                            <MenuItem fx:id="addCategory" mnemonicParsing="false" text="New Category"/>
+                            <MenuItem fx:id="addEvent" mnemonicParsing="false" text="New Event"/>
+                            <MenuItem fx:id="addTask" mnemonicParsing="false" text="New Task"/>
+                        </items>
+                    </Menu>
+                    <Menu mnemonicParsing="false" text="Notes and Quotes">
+                        <items>
+                            <MenuItem fx:id="addNq" mnemonicParsing="false" text="Notes&amp;Quotes"/>
+                        </items>
+                    </Menu>
+                    <Menu mnemonicParsing="false" text="Delete">
+                        <items>
+                            <MenuItem fx:id="deleteMenu" mnemonicParsing="false" text="delete"/>
+                        </items>
+                    </Menu>
+                    <Menu mnemonicParsing="false" text="Edit">
+                        <items>
+                            <MenuItem fx:id="editName" mnemonicParsing="false" text="edit name"/>
+                            <MenuItem fx:id="editDescription" mnemonicParsing="false" text="edit description"/>
+                            <MenuItem fx:id="editCategory" mnemonicParsing="false" text="edit category"/>
+                        </items>
+                    </Menu>
+                    <Menu mnemonicParsing="false" text="Search">
+                        <items>
+                            <MenuItem fx:id="searchTask" mnemonicParsing="false" text="search task"/>
+                        </items>
+                    </Menu>
+                    <Menu mnemonicParsing="false" text="Filter">
+                        <items>
+                            <MenuItem fx:id="filter" mnemonicParsing="false" text="filter by category"/>
+                        </items>
+                    </Menu>
+                </menus>
+            </MenuBar>
+            <VBox alignment="CENTER" layoutY="25.0" prefHeight="595.0" prefWidth="850.0" spacing="10.0">
+                <children>
+                    <HBox alignment="TOP_CENTER" prefHeight="42.0" prefWidth="800.0">
+                        <children>
+                            <Label alignment="TOP_LEFT" text="WEEK: ">
+                                <font>
+                                    <Font name="Courier New" size="26.0"/>
+                                </font>
+                            </Label>
+                            <Label fx:id="nameOfWeek" text="&quot;insert name&quot;">
+                                <font>
+                                    <Font name="Courier New" size="26.0"/>
+                                </font>
+                            </Label>
+                        </children>
+                    </HBox>
+                    <HBox alignment="TOP_CENTER" prefHeight="240.0" prefWidth="800.0" spacing="10.0">
+                        <children>
+                            <VBox fx:id="sunday" alignment="BOTTOM_LEFT" prefHeight="240.0" prefWidth="192.0">
+                                <children>
+                                    <Label text="SUNDAY:">
+                                        <font>
+                                            <Font name="Courier New Bold" size="20.0"/>
+                                        </font>
+                                    </Label>
+                                    <ListView fx:id="sundayEvent" prefHeight="116.0" prefWidth="192.0"/>
+                                    <ListView fx:id="sundayTask" prefHeight="116.0" prefWidth="192.0"/>
+                                </children>
+                            </VBox>
+                            <VBox fx:id="monday" alignment="BOTTOM_LEFT" prefHeight="240.0" prefWidth="192.0">
+                                <children>
+                                    <Label text="MONDAY:">
+                                        <font>
+                                            <Font name="Courier New Bold" size="20.0"/>
+                                        </font>
+                                    </Label>
+                                    <ListView fx:id="mondayEvent" prefHeight="116.0" prefWidth="192.0"/>
+                                    <ListView fx:id="mondayTask" prefHeight="116.0" prefWidth="192.0"/>
+                                </children>
+                            </VBox>
+                            <VBox fx:id="tuesday" alignment="BOTTOM_LEFT" prefHeight="240.0" prefWidth="192.0">
+                                <children>
+                                    <Label text="TUESDAY:">
+                                        <font>
+                                            <Font name="Courier New Bold" size="20.0"/>
+                                        </font>
+                                    </Label>
+                                    <ListView fx:id="tuesdayEvent" prefHeight="116.0" prefWidth="192.0"/>
+                                    <ListView fx:id="tuesdayTask" prefHeight="116.0" prefWidth="192.0"/>
+                                </children>
+                            </VBox>
+                            <VBox fx:id="wednesday" alignment="BOTTOM_LEFT" prefHeight="240.0" prefWidth="192.0">
+                                <children>
+                                    <Label text="WEDNESDAY: ">
+                                        <font>
+                                            <Font name="Courier New Bold" size="20.0"/>
+                                        </font>
+                                    </Label>
+                                    <ListView fx:id="wednesdayEvent" prefHeight="116.0" prefWidth="192.0"/>
+                                    <ListView fx:id="wednesdayTask" prefHeight="116.0" prefWidth="192.0"/>
+                                </children>
+                            </VBox>
+                        </children>
+                    </HBox>
+                    <HBox alignment="TOP_CENTER" prefHeight="240.0" prefWidth="800.0" spacing="10.0">
+                        <children>
+                            <VBox fx:id="thursday" alignment="BOTTOM_LEFT" prefHeight="240.0" prefWidth="192.0">
+                                <children>
+                                    <Label text="THURSDAY: ">
+                                        <font>
+                                            <Font name="Courier New Bold" size="20.0"/>
+                                        </font>
+                                    </Label>
+                                    <ListView fx:id="thursdayEvent" prefHeight="116.0" prefWidth="192.0"/>
+                                    <ListView fx:id="thursdayTask" prefHeight="116.0" prefWidth="192.0"/>
+                                </children>
+                            </VBox>
+                            <VBox fx:id="friday" alignment="BOTTOM_LEFT" prefHeight="240.0" prefWidth="192.0">
+                                <children>
+                                    <Label text="FRIDAY:">
+                                        <font>
+                                            <Font name="Courier New Bold" size="20.0"/>
+                                        </font>
+                                    </Label>
+                                    <ListView fx:id="fridayEvent" prefHeight="116.0" prefWidth="192.0"/>
+                                    <ListView fx:id="fridayTask" prefHeight="116.0" prefWidth="192.0"/>
+                                </children>
+                            </VBox>
+                            <VBox fx:id="saturday" alignment="BOTTOM_LEFT" prefHeight="240.0" prefWidth="192.0">
+                                <children>
+                                    <Label text="SATURDAY: ">
+                                        <font>
+                                            <Font name="Courier New Bold" size="20.0"/>
+                                        </font>
+                                    </Label>
+                                    <ListView fx:id="saturdayEvent" prefHeight="116.0" prefWidth="192.0"/>
+                                    <ListView fx:id="saturdayTask" prefHeight="116.0" prefWidth="192.0"/>
+                                </children>
+                            </VBox>
+                            <VBox alignment="BOTTOM_LEFT" prefHeight="240.0" prefWidth="192.0">
+                                <children>
+                                    <Label text="NOTES: ">
+                                        <font>
+                                            <Font name="Courier New Bold" size="20.0"/>
+                                        </font>
+                                    </Label>
+                                    <ListView fx:id="notesList" prefHeight="116.0" prefWidth="192.0"/>
+                                    <Label text="QUOTES:">
+                                        <font>
+                                            <Font name="Courier New Bold" size="20.0"/>
+                                        </font>
+                                    </Label>
+                                    <ListView fx:id="quotesList" prefHeight="116.0" prefWidth="192.0"/>
+                                </children>
+                            </VBox>
+                        </children>
+                    </HBox>
+                </children>
+            </VBox>
+        </children>
+    </AnchorPane>
+</Scene>

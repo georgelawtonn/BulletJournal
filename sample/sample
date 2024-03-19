@@ -1,0 +1,1 @@
+{"Events":[{"Name":"event 2","Description":"dess","Day Of Week":"TUESDAY","Category":"1","Start Time":"10:00","Duration":6}],"Tasks":[{"Name":"task 2","Description":"task","Day Of Week":"MONDAY","Category":"1","Complete":false}],"MaxTask":2,"MaxEvent":2,"WeekName":"demo","Categories":["1"],"Notes":["notes "],"Quotes":["quotes"]}

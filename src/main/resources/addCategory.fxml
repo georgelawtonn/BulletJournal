@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.Scene?>
+<?import javafx.scene.text.Font?>
+<Scene xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <AnchorPane prefHeight="243.0" prefWidth="310.0">
+        <children>
+            <Button fx:id="submitCategory" layoutX="131.0" layoutY="171.0" mnemonicParsing="false" text="Submit"/>
+            <Label layoutX="76.0" layoutY="69.0" prefHeight="13.0" prefWidth="163.0" text="Add a Category">
+                <font>
+                    <Font name="Courier New" size="18.0"/>
+                </font>
+            </Label>
+            <TextField fx:id="newCategory" layoutX="48.0" layoutY="109.0" prefHeight="25.0" prefWidth="219.0"/>
+        </children>
+    </AnchorPane>
+</Scene>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.Scene?>
+<?import javafx.scene.text.Font?>
+<Scene xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <AnchorPane prefHeight="200" prefWidth="200">
+        <children>
+            <VBox prefHeight="210.0" prefWidth="460.0">
+                <children>
+                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="487.0">
+                        <children>
+                            <Label text="!!!Warning!!!">
+                                <font>
+                                    <Font name="Courier New Bold" size="25.0"/>
+                                </font>
+                            </Label>
+                        </children>
+                    </HBox>
+                    <HBox alignment="CENTER" prefHeight="24.0" prefWidth="526.0">
+                        <children>
+                            <Label fx:id="warning" text="&quot;insert warning message here&quot;">
+                                <font>
+                                    <Font name="Courier New" size="17.0"/>
+                                </font>
+                            </Label>
+                        </children>
+                    </HBox>
+                    <HBox alignment="CENTER" prefHeight="31.0" prefWidth="460.0">
+                        <children>
+                            <Label fx:id="more" text="&quot;more&quot;">
+                                <font>
+                                    <Font name="Courier New" size="11.0"/>
+                                </font>
+                            </Label>
+                        </children>
+                    </HBox>
+                    <HBox alignment="CENTER" prefHeight="77.0" prefWidth="526.0" spacing="100.0">
+                        <children>
+                            <Button fx:id="cont" mnemonicParsing="false" text="Continue"/>
+                        </children>
+                    </HBox>
+                </children>
+            </VBox>
+        </children>
+    </AnchorPane>
+</Scene>
